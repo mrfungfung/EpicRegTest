@@ -1,0 +1,11 @@
+development:
+  server: localhost
+  database: EpicRegTest-development
+
+test:
+  database: EpicRegTest-test
+  server: localhost
+
+production:
+  database: EpicRegTest-production
+  server: localhost
