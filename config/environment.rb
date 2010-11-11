@@ -40,6 +40,7 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 config.frameworks -= [ :active_record ]
 config.gem 'mongo_mapper'
+config.gem 'will_paginate', :version => '2.3.12'
 #config.gem 'devise'
 
 
