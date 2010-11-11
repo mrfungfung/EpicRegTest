@@ -22,7 +22,7 @@ key :remember_token, String
 #!!! how to set which field is the id/key
 timestamps! # This would create a "created_at" and "updated_at" keys on create
 #!!! ^ need to check that the timestamps are indeed in the database
-key :admin, Boolean, :default => false
+key :admin, Boolean, :default => true; #false
 
 
 #!!!
@@ -60,6 +60,7 @@ validates_length_of :password, :within => 6..40
         # save_without_validation  <-- syntax for active reocrd 
         save(:validate => false) 
     end
+    
 
 private 
 

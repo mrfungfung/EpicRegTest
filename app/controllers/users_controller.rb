@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-    before_filter :authenticate, :only => [:index, :edit, :update, :destroy]
+    before_filter :authenticate, :only => [:index, :edit, :update, :destroy]#, :adminOnce]
     before_filter :correct_user, :only => [:edit, :update]
     before_filter :admin_user, :only => :destroy
     
@@ -57,6 +57,12 @@ class UsersController < ApplicationController
         flash[:success] = "User destroyed."
         redirect_to users_path
     end
+
+#!!!    
+#    def adminOnce
+#        @title = "Making You Aminn!"
+#    end
+    
     
     private
         def authenticate
