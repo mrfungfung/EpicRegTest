@@ -22,7 +22,7 @@ key :remember_token, String
 #!!! how to set which field is the id/key
 timestamps! # This would create a "created_at" and "updated_at" keys on create
 #!!! ^ need to check that the timestamps are indeed in the database
-key :admin, Boolean, :default => true; #false
+key :admin, Boolean, :default => false
 
 
 #!!!
