@@ -42,4 +42,5 @@ config.frameworks -= [ :active_record ]
 config.gem 'mongo_mapper'
 #config.gem 'devise'
 
+
 end

@@ -101,7 +101,7 @@ padding: 1em;
 vertical-align: top;
 background: #ffc;
 }
-.profile img.gravatar {
+.profile img.gravatar { /* not used */
 border: 1px solid #999;
 margin-bottom: -15px;
 }

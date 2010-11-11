@@ -7,7 +7,7 @@ def title
 	if @title.nil?
 		base_title
 	else
-		"#{base_title} | #{h(@title)}"
+		"#{base_title} | #{h(@title)}"  #h escape malicious HTML code
 	end
     end
 end
